@@ -1,0 +1,83 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("https://img.freepik.com/premium-photo/young-woman-watching-video-demand-her-tv_738298-602.jpg?size=626&ext=jpg&ga=GA1.1.1557849882.1674567212&semt=sph");
+    background-size: cover;
+    position: relative;
+
+    .top {
+        .wrapper {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                height: 40px;
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+
+        .input {
+            width: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        form {
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+            input {
+                height: 40px;
+                border-radius: 5px;
+                background-color: grey;
+                color: white;
+                padding-left: 10px;
+
+                &::placeholder {
+                    color: lightgrey;
+                }
+            }
+            button {
+                height: 40px;
+                border-radius: 5px;
+                background-color: red;
+                color: white;
+                border: none;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+            span {
+                color: lightgrey;
+                b {
+                    color: white;
+                }
+            }
+        }
+    }
+}
